@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Example jquery.sameheight</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+        <style>
+            html {
+                color:#333;
+            }
+
+            .wrapper {
+                padding:20px 0;
+                overflow:auto;
+            }
+
+            .column {
+                width:31.3333%;
+                margin-right:1%;
+                margin-left:1%;
+                float:left;
+                background:#5A6BB5;
+                color:#efefef;
+                padding-bottom: 10px;
+            }
+
+            .column p {
+                padding:10px 10px 0 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Example of jquery.sameheight
+        </h1>
+        <p>It works responsive, try resizing your browser window. The height of the columns are adjusted automatically.
+        </p>
+        <div class="wrapper">
+            <div class="column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis urna porta, volutpat tortor id, feugiat diam. Duis varius euismod scelerisque. Nunc aliquet interdum eleifend. Maecenas posuere nunc ac augue aliquam tincidunt. Suspendisse ut mattis lacus, nec vulputate velit.</p>
+            </div>
+            <div class="column">
+                <p> Aliquam mollis massa enim, ac commodo quam gravida nec. In a ligula a arcu varius volutpat. Aliquam erat volutpat. In tincidunt placerat ante, in dignissim ligula dignissim vel. Maecenas sed quam posuere, sagittis massa quis, ultrices est. Lorem ipsum dolor sit amet., consectetur adipiscing elit.</p>
+                <p>Nunc eu est congue, ultrices lacus eu, fringilla urna. Nullam sit amet euismod nisl, quis tempor diam. Quisque vehicula pellentesque ipsum a vulputate. Aenean neque dolor, venenatis tempus nunc ut, rutrum rutrum leo. Etiam aliquam fringilla hendrerit. Fusce at egestas lectus. Phasellus tristique nunc ac est malesuada, sed tincidunt leo blandit.</p>
+            </div>
+            <div class="column">
+                 <p>Morbi erat nunc, rhoncus at tincidunt ac, viverra ut justo. Nulla elementum sem vitae sem fringilla, eget convallis neque adipiscing. Aenean at turpis eget justo sodales ullamcorper. Phasellus eget blandit felis. Sed vitae congue sapien, gravida tristique magna. Curabitur condimentum dictum est pulvinar vulputate. In ultrices feugiat vehicula. Proin varius tempor turpis. </p>
+            </div>
+        </div>
+        <h2>Usage</h2>
+        <code>
+            $('.column').sameheight();
+        </code>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="jquery.sameheight.min.js"></script>
+        <script>
+            (function($) {
+                $(document).ready(function(){
+                    $('.column').sameheight();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>
