@@ -1,5 +1,6 @@
 /*
  * Jquery Sameheight Responsive
+ * https://github.com/DiederikLascaris/jquery-sameheight
  *
  * Author: D. Lascaris (Runesa)
  * Version: 1.1
